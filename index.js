@@ -22,3 +22,7 @@ function startGame() {
     cardsEL.textContent = "Cards: " + firstCard + " " + secondCard
     sumEl.textContent = "Sum: " + sum
 }
+
+function newCard(){
+    console.log("Drawing a new card!")
+}
