@@ -3,9 +3,15 @@ let cards = []
 let isAlive = false
 let hasBlackJack = false
 
+let playerName = "Joe"
+let playerChips = 145
+
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEL = document.getElementById("cards-el")
+let playerEL = document.getElementById("player-el")
+
+playerEL.textContent = playerName + ": $" + playerChips
 
 function startGame() {
     isAlive = true
