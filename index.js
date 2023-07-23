@@ -3,7 +3,7 @@ let secondCard = 11
 let hasBlackJack = false
 let isAlive = true
 let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
+let sumEl = document.querySelector("#sum-el")
 
 let sum = firstCard + secondCard
 
