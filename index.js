@@ -24,12 +24,13 @@ function renderGame() {
         isAlive = false
     }
 
-    cardsEL.textContent = "Cards: " + cards[0] + " " + cards[1]
+    cardsEL.textContent = "Cards: " + cards.join(" ")
     sumEl.textContent = "Sum: " + sum
 }
 
 function newCard() {
     let card = 7
     sum += card
+    cards.push(card)
     renderGame()
 }
