@@ -1,5 +1,5 @@
 let firstCard = 10
-let secondCard = 11
+let secondCard = 4
 let hasBlackJack = false
 let isAlive = true
 let messageEl = document.getElementById("message-el")
@@ -23,6 +23,8 @@ function startGame() {
     sumEl.textContent = "Sum: " + sum
 }
 
-function newCard(){
-    console.log("Drawing a new card!")
+function newCard() {
+    let card = 7
+    sum += card
+    startGame()
 }
