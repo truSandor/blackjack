@@ -35,6 +35,13 @@ function newCard() {
     renderGame()
 }
 
-function getRandomCard(){
-    return Math.floor(Math.random()*11+1)
+function getRandomCard() {
+    let randomNumber = Math.ceil(Math.random() * 13) // ace = 1, J = 11, Q = 12, K = 13 -- these are no the values just indexes
+    if (randomNumber > 10) {
+        return 10
+    } else if (randomNumber === 1) {
+        return 11
+    } else {
+        return randomNumber
+    }
 }
